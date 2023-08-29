@@ -1,0 +1,33 @@
+/* 1025 */
+@media (max-width: 1030px) {}
+
+/* 900 */
+@media (max-width: 900px) {
+
+  .header .container .menu,
+  .header .container .btns {
+    display: none;
+  }
+
+  .header .container .mobile__menu {
+    /* transform: translateX(-100%); */
+  }
+
+  .header .container .burger {
+    display: block;
+  }
+}
+
+/* 770 */
+
+
+/* 500 */
+@media (max-width: 500px) {
+  .header .container .logo {
+    width: 70px;
+  }
+
+  .header .container .burger {
+    font-size: 30px;
+  }
+}
