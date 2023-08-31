@@ -1,5 +1,51 @@
 /* 1025 */
-@media (max-width: 1030px) {}
+@media (max-width: 1030px) {
+  .hero::before {
+    width: 400px;
+    height: 500px;
+    right: 0;
+    bottom: -220px;
+  }
+
+  .benefits::before {
+    width: 400px;
+    height: 500px;
+    left: 0;
+    top: 50%;
+  }
+
+  .numbers::before {
+    width: 400px;
+    height: 500px;
+  }
+
+  .benefits {
+    padding: 90px 0;
+  }
+
+  .benefits .texts {
+    padding: 40px 0;
+  }
+
+  .benefits .wrapper {
+    padding-top: 80px;
+    flex-wrap: wrap;
+  }
+
+  .services .wrapper {
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 50px;
+  }
+
+  .services .wrapper .item {
+    width: 300px;
+  }
+
+  .services .wrapper .item:hover {
+    width: 400px;
+  }
+}
 
 /* 900 */
 @media (max-width: 900px) {
@@ -9,25 +55,103 @@
     display: none;
   }
 
-  .header .container .mobile__menu {
-    /* transform: translateX(-100%); */
-  }
-
   .header .container .burger {
     display: block;
   }
+
 }
 
 /* 770 */
+@media (max-width: 770px) {
+  .hero {
+    padding: 150px 0;
+  }
+
+  .hero .container .content h1 {
+    max-width: max-content;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .hero .container .content p {
+    padding: 30px 0;
+  }
+
+  .hero::before {
+    width: 250px;
+    height: 310px;
+    right: 0;
+    bottom: -100px;
+  }
+
+  .benefits {
+    padding: 90px 0;
+  }
+
+  .benefits::before {
+    width: 250px;
+    height: 310px;
+  }
+
+  .services .wrapper .item {
+    width: 250px;
+  }
+
+  .numbers::before {
+    width: 250px;
+    height: 310px;
+  }
+
+}
 
 
 /* 500 */
 @media (max-width: 500px) {
+  .btn.white {
+    padding: 10px 30px;
+  }
+
   .header .container .logo {
     width: 70px;
   }
 
   .header .container .burger {
     font-size: 30px;
+  }
+
+  .hero {
+    padding: 100px 0;
+  }
+
+  .hero .container .content h1 {
+    font-size: 35px;
+  }
+
+  .hero .container .content p {
+    font-size: 16px;
+  }
+
+
+  .services .wrapper {
+    gap: 20px;
+  }
+
+  .services .wrapper .item {
+    width: 200px;
+  }
+
+  .services .wrapper .item:hover {
+    width: 300px;
+  }
+
+}
+
+/* 400 */
+@media (max-width: 400px) {
+  .hero::before {
+    width: 170px;
+    height: 210px;
+    right: 0;
+    bottom: -50px;
   }
 }
