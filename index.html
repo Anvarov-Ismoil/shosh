@@ -71,10 +71,43 @@
     </div>
   </section>
 
-  <!-- register -->
+  <!-- Register -->
+  <section class="register">
+    <div class="container">
+      <h1 class="site-title">Бронирование номера</h1>
+      
+      <form>
+        <input class="number" onkeydown="phoneNumberFormatter()" maxlength="9" type="text" placeholder="Введите номер...">
+        
+        <input class="date1" placeholder="Дата Заезда" type="text" onfocus="(this.type ='date')">
+        <input class="date2" placeholder="Дата Выезда" type="text" onfocus="(this.type ='date')">
+        
+        <div class="counter number1">
+          <span class="minus">-</span>
+          <input class="test" disabled type="text" placeholder="Кол-во взрослых" />
+          <span class="plus">+</span>
+        </div>
+        
+        <div class="counter number2">
+          <span class="minus">-</span>
+          <input class="test" disabled type="text" placeholder="'Кол-во Детей" />
+          <span class="plus">+</span>
+        </div>
+        
+        <div class="counter number3">
+          <span class="minus">-</span>
+          <input class="test" disabled type="text" placeholder="'Кол-во Номеров" />
+          <span class="plus">+</span>
+        </div>
+        
+      </form>
+      
+      <button class="btn white">Забронировать</button>
+    </div>
+  </section>
 
   <!-- Benefits -->
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <div class="container">
       <h1 class="site-title">The Ultimate Hotel for Both Leisure and Business Goers, Who Visit the Fine City of
         Indianapolis</h1>
@@ -133,7 +166,7 @@
   </section>
 
   <!-- Services -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h1 class="site-title">Showcase Your Product, Service or Event</h1>
       <h3 class="subtitle">Insert some tasty images of what your are trying to promote here</h3>
@@ -166,7 +199,7 @@
   </section>
 
   <!-- Numbers -->
-  <section class="numbers">
+  <section class="numbers" id="numbers">
     <div class="container">
       <h1 class="site-title">People Love Numbers</h1>
       <h3 class="subtitle">Boast the number of happy clients or ticket bought</h3>
@@ -202,6 +235,242 @@
       </div>
     </div>
   </section>
+
+  <!-- Comments -->
+  <section class="comments" id="comments">
+    <div class="container">
+      <h1 class="site-title">People Believe Other People</h1>
+      <p class="subtitle">Let your visitors know about your happy customers</p>
+      <div class="wrapper">
+        <!-- item -->
+        <div class="item">
+          <h3>As a businessman, who travels all year
+            long I can say that this hotel has everything that a man like me may need</h3>
+          <div class="user">
+            <h3>Harry Wood</h3>
+            <p>SATISFIED CUSTOMER</p>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h3>As a businessman, who travels all year
+            long I can say that this hotel has everything that a man like me may need</h3>
+          <div class="user">
+            <h3>Harry Wood</h3>
+            <p>SATISFIED CUSTOMER</p>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h3>As a businessman, who travels all year
+            long I can say that this hotel has everything that a man like me may need</h3>
+          <div class="user">
+            <h3>Harry Wood</h3>
+            <p>SATISFIED CUSTOMER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <img src="images/brand.png" alt="#">
+      <img src="images/brand.png" alt="#">
+      <img src="images/brand.png" alt="#">
+      <img src="images/brand.png" alt="#">
+      <img src="images/brand.png" alt="#">
+      <img src="images/brand.png" alt="#">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h1 class="site-title">Tell About Your Featured Product</h1>
+      <h3 class="subtitle">Your visitors shoul know about your best product.</h3>
+    </div>
+    <div class="wrapper">
+      <div class="image-block">
+        <img src="images/features.png" alt="#">
+      </div>
+      <div class="text-content">
+        <h3 class="title">Premium Suite</h3>
+        <p class="text">Enjoy our classic suites with all the elegancy and comfort that
+          its interior has... It features such essentials as a flat-screen
+          45" TV, WiFi and 2 bathrooms with a living room and 2
+          bedrooms...</p>
+        <ul>
+          <li>
+            <div class="line"></div>
+            <span>Only 5 rooms are available</span>
+          </li>
+          <li>
+            <div class="line"></div>
+            <span>Breakfast included</span>
+          </li>
+          <li>
+            <div class="line"></div>
+            <span>Price does not include VAT & services fee</span>
+          </li>
+        </ul>
+        <button class="btn white">Забронировать</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="news" id="news">
+    <h1 class="site-title">News and Blog</h1>
+    <hr>
+
+    <div class="container">
+      <div class="wrapper">
+        <!-- card -->
+        <div class="card">
+          <div class="image-block">
+            <img src="images/news.jpg" alt="#">
+          </div>
+          <h3 class="text">А вы знаете, что в Узбекистан можно...</h3>
+          <button class="btn white">Подробно</button>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <div class="image-block">
+            <img src="images/news.jpg" alt="#">
+          </div>
+          <h3 class="text">А вы знаете, что в Узбекистан можно...</h3>
+          <button class="btn white">Подробно</button>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <div class="image-block">
+            <img src="images/news.jpg" alt="#">
+          </div>
+          <h3 class="text">А вы знаете, что в Узбекистан можно...</h3>
+          <button class="btn white">Подробно</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section class="questions" id="questions">
+    <div class="container">
+      <h1 class="site-title">Just Answer the Questions</h1>
+      <h3 class="subtitle">And you'll get more conversions</h3>
+
+      <div class="wrapper">
+        <!-- item -->
+        <div class="item">
+          <h3 class="question">What payment types do you accept?</h3>
+          <p class="text">All payments are processed via PayPal. You may also pay at the time of event. But please
+            reserve your seat by contacting us directly.</p>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h3 class="question">What payment types do you accept?</h3>
+          <p class="text">All payments are processed via PayPal. You may also pay at the time of event. But please
+            reserve your seat by contacting us directly.</p>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h3 class="question">What payment types do you accept?</h3>
+          <p class="text">All payments are processed via PayPal. You may also pay at the time of event. But please
+            reserve your seat by contacting us directly.</p>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h3 class="question">What payment types do you accept?</h3>
+          <p class="text">All payments are processed via PayPal. You may also pay at the time of event. But please
+            reserve your seat by contacting us directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h1 class="site-title">Your Contacts Here</h1>
+
+      <div class="info">
+        <div class="text">
+          <h3>Tashkent, Uzbekistan</h3>
+        </div>
+        <div class="text">
+          <h3>410 S Missouri St, Indianapolis, IN 46225, USA</h3>
+        </div>
+        <div class="text">
+          <h3><span>Email: </span> info@modernshosh.uz</h3>
+        </div>
+        <div class="text">
+          <h3><span>Phone: </span> +998951464004</h3>
+        </div>
+      </div>
+
+      <div class="maps">
+        <!-- item -->
+        <div class="item">
+          <h2>Google</h2>
+          <div class="map">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?azimuth=6.219917254952849&ll=69.249495%2C41.316331&mode=poi&poi%5Bpoint%5D=69.248387%2C41.316428&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D132543039073&z=17.49"
+              allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h2>Yandex</h2>
+          <div class="map">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?azimuth=6.219917254952849&ll=69.249495%2C41.316331&mode=poi&poi%5Bpoint%5D=69.248387%2C41.316428&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D132543039073&z=17.49"
+              allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="item">
+          <h2>Google</h2>
+          <div class="map">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?azimuth=6.219917254952849&ll=69.249495%2C41.316331&mode=poi&poi%5Bpoint%5D=69.248387%2C41.316428&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D132543039073&z=17.49"
+              allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="#">
+      </div>
+
+      <div class="info">
+        <h2>Modern shosh</h2>
+        <div class="socials">
+          <ul>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <p class="copyright">2023 © Supersite. All Rights Reserved</p>
+      </div>
+
+      <div class="logo">
+        <img src="images/logo.svg" alt="#">
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/main.js"></script>

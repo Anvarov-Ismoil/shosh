@@ -60,3 +60,59 @@ function updateValue_3() {
 const interval_1 = setInterval(updateValue_1, 20);
 const interval_2 = setInterval(updateValue_2, 20);
 const interval_3 = setInterval(updateValue_3, 20);
+
+document.querySelectorAll(".minus").forEach(function (minusButton) {
+  minusButton.addEventListener("click", function () {
+    var input = this.parentElement.querySelector("input");
+
+    let inputValue = parseInt(input.value);
+    if (isNaN(inputValue)) {
+      inputValue = 0;
+    }
+
+    var count = inputValue - 1;
+    count = count < 0 ? 0 : count;
+    input.value = count;
+    input.dispatchEvent(new Event("change"));
+    return false;
+  });
+});
+
+document.querySelectorAll(".plus").forEach(function (plusButton) {
+  plusButton.addEventListener("click", function () {
+    var input = this.parentElement.querySelector("input");
+
+    let inputValue = parseInt(input.value);
+    if (isNaN(inputValue)) {
+      inputValue = 0;
+    }
+
+    if (inputValue >= 15) {
+      return;
+    } else {
+      inputValue++;
+    }
+
+    input.value = inputValue;
+    input.dispatchEvent(new Event("change"));
+    return false;
+  });
+});
+
+
+function formatPhoneNumber(value) {
+  if (!value) return value;
+  const phoneNumber = value.replace(/[^\d]/g, '');
+  const phoneNumberLength = phoneNumber.length;
+  if (phoneNumberLength < 9) return phoneNumber;
+  if (phoneNumberLength < 6) {
+    return ` (${phoneNumber.slice(0, 2)}) ${phoneNumber.slice (2)}`;
+  }
+  return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2, 5)}-${phoneNumber.slice(5, 9)}`;
+}
+
+function phoneNumberFormatter() {
+  const inputField = document.querySelector('.number');
+  const formattedInputValue = formatPhoneNumber(inputField.value);
+  inputField.value = formattedInputValue;
+}

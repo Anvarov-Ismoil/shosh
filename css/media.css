@@ -14,7 +14,9 @@
     top: 50%;
   }
 
-  .numbers::before {
+  .numbers::before,
+  .news::before,
+  .contacts::before {
     width: 400px;
     height: 500px;
   }
@@ -42,8 +44,24 @@
     width: 300px;
   }
 
-  .services .wrapper .item:hover {
-    width: 400px;
+  .features .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .features .wrapper .image-block {
+    height: 500px;
+  }
+
+  .features .wrapper .text-content {
+    padding-left: 100px;
+  }
+
+  .news .wrapper .card {
+    width: 300px;
+  }
+
+  .contacts .maps {
+    flex-wrap: wrap;
   }
 }
 
@@ -59,6 +77,10 @@
     display: block;
   }
 
+  .contacts .maps .item .map {
+    width: 350px;
+    height: 250px;
+  }
 }
 
 /* 770 */
@@ -97,13 +119,45 @@
     width: 250px;
   }
 
-  .numbers::before {
+  .numbers::before,
+  .news::before,
+  .contacts::before {
     width: 250px;
     height: 310px;
   }
 
-}
 
+  .features .wrapper .image-block {
+    height: 350px;
+  }
+
+  .features .wrapper .text-content {
+    padding-left: 20px;
+  }
+
+  .news .wrapper .card,
+  .news .wrapper .card .image-block {
+    width: 300px;
+  }
+
+  .questions .wrapper .item {
+    width: 100%;
+  }
+
+  .contacts .info .text {
+    width: 100%;
+  }
+
+  .contacts .maps .item .map {
+    width: 300px;
+    height: 200px;
+  }
+
+  .footer .container .logo:last-child{
+    display: none;
+  }
+
+}
 
 /* 500 */
 @media (max-width: 500px) {
@@ -131,7 +185,6 @@
     font-size: 16px;
   }
 
-
   .services .wrapper {
     gap: 20px;
   }
@@ -140,8 +193,23 @@
     width: 200px;
   }
 
-  .services .wrapper .item:hover {
-    width: 300px;
+  .brands .container {
+    padding: 50px 0;
+  }
+
+  .contacts {
+    padding: 40px 0;
+  }
+
+  .contacts .maps .item h2 {
+    font-size: 22px;
+    padding-bottom: 12px;
+  }
+  
+  .footer .container {
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 15px;
   }
 
 }
@@ -153,5 +221,23 @@
     height: 210px;
     right: 0;
     bottom: -50px;
+  }
+
+  .features .wrapper .text-content ul,
+  .features .wrapper .text-content li {
+    list-style: circle;
+  }
+
+  .features .wrapper .text-content ul li .line {
+    display: none;
+  }
+
+  .news .wrapper .card {
+    width: 220px;
+  }
+
+  .news .wrapper .card .image-block {
+    width: 220px;
+    height: 200px;
   }
 }
