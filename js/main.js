@@ -23,6 +23,15 @@ window.addEventListener('resize', () => {
   }
 })
 
+window.addEventListener('scroll', () => {
+  let winHeight = pageYOffset
+  if (winHeight > 700) {
+    mobile__menu.style.transform = 'translateX(-100%)'
+    close.style.display = 'none'
+    burger.style.display = 'block'
+  }
+})
+
 const span_1 = document.querySelector('.numbers .span_1');
 const targetValue_1 = parseInt(span_1.textContent);
 
@@ -116,3 +125,29 @@ function phoneNumberFormatter() {
   const formattedInputValue = formatPhoneNumber(inputField.value);
   inputField.value = formattedInputValue;
 }
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    document.querySelector('#scroll-top').classList.add('active')
+  } else {
+    document.querySelector('#scroll-top').classList.remove('active')
+  }
+  menu.classList.remove('active')
+  burger.classList.remove('active')
+})
+
+const modal = document.querySelector('.modal')
+const modalX = document.querySelector('.modal .close')
+const body = document.body
+
+const newsCard = document.querySelectorAll('.news .card .btn').forEach(card => {
+  card.addEventListener('click', () => {
+    modal.classList.add('active')
+    body.style.overflow = 'hidden'
+  })
+})
+
+modalX.addEventListener('click', () => {
+  modal.classList.remove('active')
+  body.style.overflow = 'auto'
+})

@@ -21,19 +21,25 @@
 <body>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="logo">
         <img src="images/logo.svg" alt="">
       </div>
 
       <ul class="menu">
-        <li><a href="#" class="link">About Us</a></li>
-        <li><a href="#" class="link">About Rooms</a></li>
-        <li><a href="#" class="link">Why We?</a></li>
-        <li><a href="#" class="link">News and Blog</a></li>
-        <li><a href="#" class="link">Contact</a></li>
+        <li><a href="#benefits" class="link">About Us</a></li>
+        <li><a href="#services" class="link">About Rooms</a></li>
+        <li><a href="#features" class="link">Why We?</a></li>
+        <li><a href="#news" class="link">News and Blog</a></li>
+        <li><a href="#contacts" class="link">Contact</a></li>
       </ul>
+
+      <ul class="langs">
+        <li><a href="#">UZ</a></li>
+        <li><a href="#">RU</a></li>
+      </ul>
+
 
       <div class="btns">
         <button class="btn white">Call Now</button>
@@ -47,11 +53,13 @@
       <!-- mobile-menu -->
       <div class="mobile__menu">
         <ul>
-          <li><a href="#" class="link">About Us</a></li>
-          <li><a href="#" class="link">About Rooms</a></li>
-          <li><a href="#" class="link">Why We?</a></li>
-          <li><a href="#" class="link">News and Blog</a></li>
-          <li><a href="#" class="link">Contact</a></li>
+          <li><a href="#benefits" class="link">About Us</a></li>
+          <li><a href="#services" class="link">About Rooms</a></li>
+          <li><a href="#features" class="link">Why We?</a></li>
+          <li><a href="#news" class="link">News and Blog</a></li>
+          <li><a href="#contacts" class="link">Contact</a></li>
+          <li><a href="#" class="link">UZ</a></li>
+          <li><a href="#" class="link">RU</a></li>
           <button class="btn white">call now</button>
         </ul>
       </div>
@@ -60,7 +68,7 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container">
       <div class="content">
         <h1>Title of Your Product, Service or Event</h1>
@@ -72,36 +80,37 @@
   </section>
 
   <!-- Register -->
-  <section class="register">
+  <section class="register" id="register">
     <div class="container">
       <h1 class="site-title">Бронирование номера</h1>
-      
+
       <form>
-        <input class="number" onkeydown="phoneNumberFormatter()" maxlength="9" type="text" placeholder="Введите номер...">
-        
+        <input class="number" onkeydown="phoneNumberFormatter()" maxlength="9" type="text"
+          placeholder="Введите номер...">
+
         <input class="date1" placeholder="Дата Заезда" type="text" onfocus="(this.type ='date')">
         <input class="date2" placeholder="Дата Выезда" type="text" onfocus="(this.type ='date')">
-        
+
         <div class="counter number1">
           <span class="minus">-</span>
           <input class="test" disabled type="text" placeholder="Кол-во взрослых" />
           <span class="plus">+</span>
         </div>
-        
+
         <div class="counter number2">
           <span class="minus">-</span>
           <input class="test" disabled type="text" placeholder="'Кол-во Детей" />
           <span class="plus">+</span>
         </div>
-        
+
         <div class="counter number3">
           <span class="minus">-</span>
           <input class="test" disabled type="text" placeholder="'Кол-во Номеров" />
           <span class="plus">+</span>
         </div>
-        
+
       </form>
-      
+
       <button class="btn white">Забронировать</button>
     </div>
   </section>
@@ -182,7 +191,7 @@
         <!-- item -->
         <div class="item">
           <div class="image-block">
-            <img src="images/services_1.png" alt="#">
+            <img src="images/news.jpg" alt="#">
           </div>
           <h3>Bathroom</h3>
         </div>
@@ -471,6 +480,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="close">
+      <button><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="content">
+
+      <!-- left -->
+      <div class="left">
+        <img src="images/news.jpg" alt="#">
+      </div>
+      <!-- right -->
+      <div class="right">
+        <h2>This is site title</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit unde quasi debitis natus voluptate
+          repellat perferendis quam officiis dolores voluptatum, quibusdam, ab voluptatibus esse corrupti doloremque?
+          Ullam nemo incidunt similique. Vero consectetur consequatur beatae! Fugiat.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll top button  -->
+  <a href="#header" class="fas fa-angle-up" id="scroll-top"></a>
 
 
   <script src="js/main.js"></script>

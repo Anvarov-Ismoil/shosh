@@ -1,5 +1,9 @@
 /* 1025 */
 @media (max-width: 1030px) {
+  .modal {
+    max-width: 900px;
+  }
+
   .hero::before {
     width: 400px;
     height: 500px;
@@ -44,6 +48,11 @@
     width: 300px;
   }
 
+  .services .wrapper .item .image-block {
+    width: 100%;
+    height: 300px;
+  }
+
   .features .wrapper {
     flex-wrap: wrap;
   }
@@ -67,7 +76,11 @@
 
 /* 900 */
 @media (max-width: 900px) {
+  .modal {
+    max-width: 750px;
+  }
 
+  .header .container .langs,
   .header .container .menu,
   .header .container .btns {
     display: none;
@@ -85,6 +98,16 @@
 
 /* 770 */
 @media (max-width: 770px) {
+  .modal {
+    top: 10%;
+    max-width: 500px;
+  }
+
+  .modal .content .left,
+  .modal .content .right {
+    width: 100%;
+  }
+
   .hero {
     padding: 150px 0;
   }
@@ -117,6 +140,11 @@
 
   .services .wrapper .item {
     width: 250px;
+  }
+
+  .services .wrapper .item .image-block {
+    width: 100%;
+    height: 250px;
   }
 
   .numbers::before,
@@ -153,7 +181,7 @@
     height: 200px;
   }
 
-  .footer .container .logo:last-child{
+  .footer .container .logo:last-child {
     display: none;
   }
 
@@ -161,6 +189,18 @@
 
 /* 500 */
 @media (max-width: 500px) {
+  .modal {
+    max-width: 350px;
+  }
+
+  .modal .content {
+    padding: 0;
+  }
+
+  .modal .close button {
+    font-size: 30px;
+  }
+
   .btn.white {
     padding: 10px 30px;
   }
@@ -193,6 +233,11 @@
     width: 200px;
   }
 
+  .services .wrapper .item .image-block {
+    height: 200px;
+    width: 100%;
+  }
+
   .brands .container {
     padding: 50px 0;
   }
@@ -205,7 +250,7 @@
     font-size: 22px;
     padding-bottom: 12px;
   }
-  
+
   .footer .container {
     justify-content: center;
     gap: 30px;
@@ -216,6 +261,10 @@
 
 /* 400 */
 @media (max-width: 400px) {
+  .modal {
+    max-width: 300px;
+  }
+  
   .hero::before {
     width: 170px;
     height: 210px;
